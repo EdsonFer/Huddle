@@ -1,0 +1,100 @@
+:root {
+	--violet: hsl(257, 40%, 49%);
+	--softMagenta: hsl(300, 69%, 71%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap, https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+	padding: 0px;
+	box-sizing: border-box;
+}
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: Open Sans;
+	position: relative;
+	background-color: var(--violet);
+	background-image: url(../images/bg-desktop.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+header img {
+	margin: 3em 0 4em 9em;
+}
+
+.content {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 60px;
+}
+
+.box {
+	flex: 1 1 475px;
+}
+
+.intro h1 {
+	color: white;
+	font-size: 2.5em;
+	font-weight: 1em;
+	font-family: "Poppins", sans-serif;
+}
+.intro p {
+	color: white;
+	font-size: 1.2em;
+	font-weight: 1em;
+	margin-bottom: 50px;
+}
+
+.btn {
+	position: relative;
+	border: none;
+	font-size: 1rem;
+	padding: 15px 50px 15px 50px;
+	border-radius: 1.5rem;
+	background-color: white;
+	box-shadow: 1px 5px 10px 1px hsl(257, 59%, 32%);
+	text-decoration: none;
+}
+.btn:hover {
+	cursor: pointer;
+	color: white;
+	background-color: var(--softMagenta);
+}
+.social-icons {
+	padding: 3rem;
+	margin: 7rem 0 0 10rem;
+}
+.social-icons ion-icon {
+	color: white;
+	width: 25px;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 7px;
+	margin: 4px;
+}
+
+.social-icons ion-icon:hover {
+	color: var(--softMagenta);
+}
+
+/* For small screens and smartphones */
+@media only screen and (max-width: 1044px) {
+	body {
+		background-image: url(../images/bg-mobile.svg);
+	}
+	header img {
+		margin: 2em 0 5em 4em;
+	}
+	.intro {
+		text-align: center;
+	}
+	.social-icons {
+		margin: 0 auto;
+	}
+}
